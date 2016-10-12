@@ -1,0 +1,144 @@
+.container{    
+	width:19.2rem;
+	height:10.8rem;
+	overflow: hidden;
+	background: url(http://pic1.ptqy.gitv.tv/common/lego/20151215/8d5a416947f64350b6684dd499c9e584.jpg);
+	background-size:cover;
+	position:relative;
+}
+.cover{					/*遮罩层*/
+	width: 19.2rem;
+	height:10.8rem;
+	background: rgba(0, 0, 0, .8);
+	position: absolute;
+	left:0;
+	top: 0;
+}
+
+/* ------------------------------------------- */
+/* -------------- info ------------ */
+/* ------------------------------------------- */
+.info{
+	margin-top: 1.12rem;
+	z-index: 9999;
+}
+.title-box{
+	width:17.6rem;
+	height: 0.75rem;
+	margin-left:0.92rem;
+	clear: both;
+
+}
+.title{
+	height: 0.75rem;
+	float: left;
+	font-size:0.57rem;
+	color: #c6c8cb;
+}
+.score{
+	height: 0.75rem;
+	position: relative;
+	top: -0.2rem;
+	margin-left: 0.4rem;
+	float: left;
+	font-size:0.46rem;
+	color: #ffb500;
+}
+.score:first-letter{    /*评分第一个字母字体变化*/
+	font-size:0.82rem;
+}
+.number,.tote{
+	height: 0.75rem;
+	line-height: 0.75rem;
+	float: right;
+	font-size:0.38rem;
+	color: #ffb500;
+}
+.hr{
+	width: 100%;
+	height: 0.01rem;
+	background:#c6c8cb;
+	clear: both;
+	position: relative;
+	top: 0.2rem;
+
+}
+
+.info p{
+	clear: both;
+	width: 17.6rem;
+	height: 2.2rem;
+	margin-left:0.92rem;
+	margin-top: 0.81rem;
+	font-size:0.3726rem;
+	color: #c6c8cb;
+	line-height:1.5; 	
+	overflow : hidden;
+	text-overflow: ellipsis;	/*影片介绍文本显示四行，超出隐藏显示省略号*/
+	display: -webkit-box;	
+	-webkit-line-clamp: 4;	
+	-webkit-box-orient: vertical;
+    
+}
+
+
+
+/* ------------------------------------------- */
+/* -------------- list-container ------------ */
+/* ------------------------------------------- */
+
+/* 为了统一的运动距离。此部分使用了px单位。然后根据设备大小，缩放该区域 */
+.list-container{   
+	width: 1920px;
+	height:1080px;
+	padding-top: 564px;
+	position: absolute;
+	left:0px;
+	top: 0px;	
+}
+.album-list{
+	height: 450px;
+	margin-left: 44px;
+	margin-right: 44px;
+	transform:translateX(0px);
+	-webkit-transition: all .5s ease;
+}
+.album-item{
+	width: 264px;
+	height: 409px;
+	float: left;
+	margin-left: 16px;
+	margin-right: 16px;
+}
+.album-item img{
+	width:260px;
+	height:359px;
+}
+.film-title{
+	width: 260px;
+	height: 50px;
+	line-height:50px;
+	color: #c6c8cb;
+	background:rgba(156, 154, 154, .3);
+	text-align: center;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+	position: absolute;
+	top: 359px;
+	font-size:35px;
+	
+}
+.selected{					/*获得焦点*/
+	border:2px solid #37b133;
+	background: #37b133;
+	-webkit-transform: scale(1.1,1.1);
+}
+.album-vip::before{ 		/*VIP标签*/
+	content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAkBAMAAAAnV0S3AAAAMFBMVEVJrh7///+t1qLZ69OIxnX2+vVbtDrj8N/s9eqh0ZTE4byVy4XO5si53K96wGRrulDxB4xEAAAA8klEQVQ4y+XQzVHCUBTF8eNHEFQw543xQcQJ7lyaDkwHZMM6dKAdiBXgyq10QDrADrAD6AA6gDcM795hkQLgv3hn8Zt5i4tTbh3tNh+kZIiMZDwWvuDUzQ1/PdOuPDc4c3PLN6QhkBngh5+ea/nAzbANz0gNfJOOe7+N4qUVLrvAlhLFQSQcsADu+Kq4TuEme8A5x4rP2sItvgNXUaG4jCF9JMCyC+HaKFH8bID/R8Uv7CkeWmDU3zO3dQB91sUl54q/Cs0Nzq+5UJ/r3Fn7gYXwYZP70lRw9vT3UMF1m88quElOK7jFqHBKhsL6rDEUH30bHBktf3O79YMAAAAASUVORK5CYII=);
+	position: absolute;
+}
+.album-dubo::before{ 	   /*独播标签*/
+	content: url(http://static.ptqy.gitv.tv/tv/subject2/images/corner/dubo.png);
+	margin-left:167px; 
+}
