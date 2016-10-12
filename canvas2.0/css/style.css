@@ -1,0 +1,51 @@
+*, *::after, *::before{
+	padding: 0; 
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+html { font-size: 50px; }   /*视口宽度小于1280px*/
+	.list-container{
+	-webkit-transform: scale(0.5, 0.5);
+	transform-origin: 0 0;
+	-webkit-transform-origin: 0 0;
+}
+@media (min-width: 1280px) {   /*视口宽度大于1280px*/
+	html { font-size: 66.667px; }
+	.list-container{
+		-webkit-transform: scale(0.6667, 0.6667);
+		transform-origin: 0 0;
+		-webkit-transform-origin: 0 0;
+	}
+}
+@media (min-width: 1920px) {   /*视口宽度大于1920px*/
+	html { font-size: 100px; }
+	.list-container{
+		-webkit-transform: scale(1, 1);
+		transform-origin: 0 0;
+		-webkit-transform-origin: 0 0;
+	}
+}
+@media (min-width: 3840px) {   /*视口宽度大于3840px*/
+	html { font-size: 200px; }
+	.list-container{
+		-webkit-transform: scale(2,2);
+		transform-origin: 0 0;
+		-webkit-transform-origin: 0 0;
+	}
+}
+a{
+	text-decoration:none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
+	outline: 0;
+}
+li{ list-style: none;}
+body{
+	font-size: 0.28rem;
+	background-color: #3C3C3C;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: left top;
+	font-family: Adobe 黑体 Std R,"Microsoft YaHei",Arial,SimSun,SimHei,Tahoma,Helvetica,Arial,sans-serif;
+}
